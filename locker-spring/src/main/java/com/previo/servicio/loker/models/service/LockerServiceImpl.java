@@ -34,6 +34,7 @@ public class LockerServiceImpl implements ILockerService{
 
 	@Override
 	public Locker save(Locker objeto) {
+		objeto.setEstado(0);
 		return lockerDao.save(objeto);
 	}
 

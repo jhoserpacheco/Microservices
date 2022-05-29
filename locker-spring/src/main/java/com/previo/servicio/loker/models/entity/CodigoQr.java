@@ -39,7 +39,7 @@ public class CodigoQr implements Serializable{
 	private boolean solicitud;
 	
 	@Column(name = "value")
-	private String value;//base64
+	private String value = "Base64";//base64
 	
 	@OneToMany(mappedBy = "idCodigoQr",cascade = CascadeType.ALL)
 	private List<Solicitud> ListaSolicitudes = new ArrayList<Solicitud>();

@@ -3,6 +3,8 @@ package com.previo.servicio.loker.controllers;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -36,7 +38,7 @@ public class LockerController {
     
 
     @PostMapping()
-	public Locker save(@RequestBody Locker objeto) {
+	public Locker save(@Valid @RequestBody Locker objeto) {
 		return lockerService.save(objeto);
 	}
     
