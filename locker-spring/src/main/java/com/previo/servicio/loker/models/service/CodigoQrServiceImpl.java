@@ -12,6 +12,10 @@ import com.previo.servicio.loker.models.entity.CodigoQr;
 import com.previo.servicio.loker.models.service.interfaces.ICodigoQrService;
 import com.previo.servicio.loker.util.LockerException;
 
+/**
+Implementation to get QRCODE microservice on language programing JAVA
+ */
+
 @Service
 public class CodigoQrServiceImpl implements ICodigoQrService {
 	

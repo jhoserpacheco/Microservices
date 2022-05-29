@@ -1,6 +1,9 @@
 from rest_framework import serializers
 from ..models import Request, Log
 
+#Continuation the seraizalizers to convert de models on JSON 
+#The models will be seraialized to improve the shring data through REST framework
+
 class  RequestSerializer(serializers.ModelSerializer):
 
     class Meta:

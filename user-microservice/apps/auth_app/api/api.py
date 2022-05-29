@@ -10,6 +10,8 @@ from google.oauth2 import id_token
 from google.auth.transport import requests
 import os
 
+#Classes to obtain all modules in sign in - sign up
+
 class MyTokenObtainPairView(TokenObtainPairView):
     serializer_class = MyTokenObtainPairSerializer
 

@@ -1,6 +1,8 @@
 from django.core.management.base import BaseCommand, CommandError
 from ....user_app import rules
 
+#Managements of adding and deleting groups depending of the user role through the group permissions
+
 class Command(BaseCommand):
     help = "Create or delete groups"
 

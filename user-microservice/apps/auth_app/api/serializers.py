@@ -5,6 +5,8 @@ from rest_framework import serializers
 from django.contrib.auth.models import Group, Permission
 from apps.user_app.models import User
 
+#Serializing all models to sharing the data in REST format
+
 class PermissionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Permission
